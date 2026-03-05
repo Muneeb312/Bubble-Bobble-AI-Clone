@@ -1,0 +1,12 @@
+asset_id,type,tool,prompt_summary,iterations,manual_edit_minutes,main_problems,godot_import_notes,final_path
+player,sprite2d,Nano Banana,"A 2D side-scrolling video game sprite of a neon green cybernetic frog, cyberpunk style, flat background, profile view, clean silhouette. wearing black sunglasses",2,2,static look,,assets/ai
+enemy,sprite2d,Nano Banana,"A 2D video game sprite of a floating robotic security eye, glowing red lens, pixel art style, flat dark background.",1,2,hard to refine smaller details,,assets/ai
+trapped_enemy,sprite2d,Nano Banana,create the robotic security eye powered off and trapped in the digital blue circle ,1,2,n/a,,assets/ai
+bubble,sprite2d,Nano Banana,"A simple perfect glowing neon blue circle, 2D game asset, transparent background, digital energy effect. Mostly transparent with blue hue",2,5,n/a,,assets/ai
+battery,sprite2d,Nano Banana," A 2D flat icon of a glowing green battery cell, video game UI element, clean edges.",2,1,"resolution, blurry look",,assets/ai
+bgm,AudioStreamPlayer,ElevensLab,"A 30-second looping chiptune cyberpunk track, upbeat arcade tempo, heavy synth bass, 120 BPM",1,0,repetitive and sounds were too hard,,assets/ai/sounds
+jump,AudioStreamPlayer,ElevensLab,"Short, snappy retro 8-bit jump sound, rapidly ascending pitch, square wave synthesizer, classic arcade platformer, dry audio no reverb",1,0,hard to get smooth sound,,assets/ai/sounds
+shoot,AudioStreamPlayer,ElevensLab,"Quick laser pew, chiptune style projectile, high pitch dropping rapidly to a low frequency, synthetic and punchy, short decay.",1,0,volume issues,,assets/ai/sounds
+trapped_enemy,AudioStreamPlayer,ElevensLab,"Harsh 8-bit crunch, low-frequency thud, retro game character taking damage, glitchy noise wave, abrupt end",1,0,n/a,,assets/ai/sounds
+pop,AudioStreamPlayer,ElevensLab," Satisfying high-pitched glass pop, 16-bit arcade coin collect, bright chime, rewarding and energetic.",2,0,n/a,,assets/ai/sounds
+hit,AudioStreamPlayer,ElevensLab,"zap sound, resonant bubble forming, satisfying capture, electrifying, retro 16-bit arcade style, bouncy",4,0,hard to get right softness,,assets/ai/sounds
