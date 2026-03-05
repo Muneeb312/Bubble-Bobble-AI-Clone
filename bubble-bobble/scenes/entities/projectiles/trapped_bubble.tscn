@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxlnctsyokmll"]
+
+[ext_resource type="Script" uid="uid://du3k1vdthum6n" path="res://scripts/trapped_bubble.gd" id="1_prcmx"]
+[ext_resource type="Texture2D" uid="uid://cro0xkbx160h6" path="res://assets/sprites/ai/trapped-Photoroom.png" id="2_j82kd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j82kd"]
+radius = 16.0
+
+[node name="TrappedBubble" type="Area2D"]
+script = ExtResource("1_prcmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.8390002, 0.18750334)
+scale = Vector2(0.045840774, 0.045840777)
+texture = ExtResource("2_j82kd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_j82kd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

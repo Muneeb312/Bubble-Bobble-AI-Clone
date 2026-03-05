@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6844p5fa6m31"]
+
+[ext_resource type="Script" uid="uid://bhi3bqex3kkyk" path="res://scripts/bubble.gd" id="1_pm753"]
+[ext_resource type="Texture2D" uid="uid://bqvkhrvwvah0o" path="res://assets/sprites/ai/Gemini_Generated_Image_bp6re7bp6re7bp6r-Photoroom.png" id="2_ph2b1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ph2b1"]
+radius = 20.0
+
+[node name="Bubble" type="Area2D"]
+position = Vector2(2, 11)
+script = ExtResource("1_pm753")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -10)
+scale = Vector2(0.07572165, 0.07572166)
+texture = ExtResource("2_ph2b1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -9)
+shape = SubResource("CircleShape2D_ph2b1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

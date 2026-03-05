@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://1bynsf20gpf4"]
+
+[ext_resource type="AudioStream" uid="uid://ljqbjnr10d3r" path="res://assets/sprites/ai/Neon_Circuit_Racer.mp3" id="1_dlwne"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer"]
+stream = ExtResource("1_dlwne")
+autoplay = true

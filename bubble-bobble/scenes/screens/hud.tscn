@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://cetil7vymvqxo"]
+
+[ext_resource type="Script" uid="uid://gwcvx43ld5c3" path="res://scripts/hud.gd" id="1_v0tvv"]
+[ext_resource type="Texture2D" uid="uid://cn7ycyhiwjqdg" path="res://assets/sprites/ai/Untitled_b(1)-Photoroom.png" id="2_v0tvv"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_v0tvv")
+
+[node name="MainControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreLabel" type="Label" parent="MainControl"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 37.0
+offset_right = 106.0
+offset_bottom = 60.0
+text = "SCORE: 0"
+
+[node name="LivesContainer" type="HBoxContainer" parent="MainControl"]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 21.0
+offset_right = 310.0
+offset_bottom = 81.0
+
+[node name="TextureRect" type="TextureRect" parent="MainControl/LivesContainer"]
+layout_mode = 2
+texture = ExtResource("2_v0tvv")
+expand_mode = 3
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="MainControl/LivesContainer"]
+layout_mode = 2
+texture = ExtResource("2_v0tvv")
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="MainControl/LivesContainer"]
+layout_mode = 2
+texture = ExtResource("2_v0tvv")
+stretch_mode = 5
